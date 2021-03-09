@@ -30,9 +30,4 @@ function sleep(secs){
     }
 }
 
-i = 0
-while (i < info.length){
-    lpBOX.textContent += info[i];
-    sleep(1);
-    i++
-}
+
