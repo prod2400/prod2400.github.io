@@ -1,0 +1,50 @@
+.contact_form{
+  color:#ffe;
+  margin:2rem auto;
+  width:50vw;
+  height:57vh;
+  background:#464d54;
+  padding:1rem;
+  border-radius:15px;
+  border:1px solid #000;
+}
+.contact_form div{
+  display:inline-block;
+}
+#first_name_box{
+  padding-right:15%;
+}
+#first_name_box,#last_name_box {
+  display:inline-block;
+  
+}
+label{
+  font-size:1.6vw;
+}
+input{
+  border-radius:5px;
+  border: 1px solid silver;
+  padding:.29rem;
+}
+input[type="text"],input[type="email"]{
+  display:block;
+  font-size:1.4vw;
+  margin-bottom:1rem;
+}
+
+.email_box{
+  padding-top:1rem;
+}
+textarea{
+  border: 1px solid silver;
+  display:block;
+  width:49.5vw;
+  height:22vh;
+  min-width:49.5vw;
+  min-height:22vh;
+  max-width:49.5vw;
+  max-height:22vh;
+  margin:1vw 0;
+  border-radius:10px;
+  
+}
