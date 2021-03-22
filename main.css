@@ -10,6 +10,15 @@ html{
         background-size:cover;
         font-family: 'Open Sans', sans-serif
       }
+  html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+}
       nav{
         color:#ececec;
         /* background:#001458;*/
@@ -32,6 +41,7 @@ html{
         display:flex;
       }
       #name{
+        color:#ececec;
         margin-top:0;
         padding: 1rem 0 1rem 1rem;
         display:inline-block;
@@ -76,7 +86,7 @@ html{
       #landing-page{
         margin:0 auto;
         /*padding:0;*/
-        
+        padding:0;
         
         width:70%;
         height:100%;
@@ -88,4 +98,8 @@ html{
         /*background:red;*/
         font-size: 3.7rem;
         font-family:'DotGothic16','Open Sans','sans-serif';
+      }
+
+      #landing-page p {
+        margin-top:0;
       }
