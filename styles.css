@@ -1,0 +1,100 @@
+html{
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Raleway','Arial','sans-serif';
+    margin:0;
+    padding:0;
+}
+
+nav{
+    padding-top:0.5rem;
+    background-color: #070412;
+    color:#fff;
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 8vh;
+    position: relative;
+    transition: 0.6s;
+    z-index:10000000;
+    min-height: 8vh;
+    
+}
+
+nav.sticky{
+    background-color: white;
+    color:#000;
+}
+
+nav.sticky ul li a, nav.sticky ul li a:hover,
+nav.sticky ul li a:visited{
+    color:#000;
+}
+nav h1{
+    font-size:2rem;
+}
+
+#name-caption{
+    display:inline;
+    font-weight:300;
+    padding-bottom:1rem;
+}
+.nav-links{
+    display:flex;
+    width:40%;
+    justify-content: space-around;
+}
+nav ul li {
+    list-style-type: none;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    display:block;
+    
+    
+    
+}
+nav ul li a:hover{
+    border-bottom:1px solid white;
+}
+nav ul li a:visited{
+    color:#fff;
+}
+
+nav h1{
+    margin:0;
+}
+
+section {
+    height:100vh;
+}
+section h1{
+    margin:0;
+    padding:4.5rem 1rem 0 1rem;
+}
+#sec1{
+    background-color: #070412;
+}
+
+#sec2{
+    background-color: aquamarine;
+}
+
+#sec3{
+    background-color: lime;
+}
+
+#sec4{
+    background: maroon;
+}
+@media screen and (max-width:580px){
+    body{
+    display:none;
+    }
+}

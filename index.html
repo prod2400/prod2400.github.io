@@ -1,57 +1,76 @@
 <!DOCTYPE html>
-<!-- Wassup -->
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The web site of prodrigues</title>
-    
-    <link href="main.css" rel="stylesheet" type="text/css" media="all">
-   
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
-    <style>
-    .landing-page{
-      background: url("/gray-pc.png")
-    }
-    body{
-      backdrop-filter: blur(5px);
-    }
-    </style>
-    
-  </head>
-  <body>
-  <nav>
-    
-    
-    <ul>
-    <div class="nav_container">
-    <h1 id="name">PEDRO RODRIGUES</h1>
-      <div class="right_nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">About me</a> </li>
-          <li><a href="#s">Contact</a></li>
-          <li><a href="#">Resume</a></li>
+    <title>Responsive site</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+    <nav>
+        <div class="names">
+        <h1>Pedro Rodrigues</h1>
+        <h3 id="name-caption">Portfolio</h3>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#sec2">About</a></li>
+            <li><a href="#sec3">Resume</a></li>
+            <li><a href="#sec4">Contact</a></li>
         </ul>
-      </div>
-    </div>
-    </ul>
-  </nav>
-  <main>
-    <div id="landing-page">
-    <p>My names Pedro Rodrigues,I'm a senior at 
-      Bullard Havens Technical
-       High School
-      and after high school I would like to pursure a career in 
-      Electrical Engineering.
-      </p>
-    </div>
-  </main>
-  <script src="main.js">
-  </script>
-  </body>
+    </nav>
+    <section id="sec1">
+        <h1>Hey</h1>
+        
+        <p>Lorem ipsum dolor sit amet 
+            consectetur, adipisicing elit. 
+            Consectetur molestiae nobis autem 
+            obcaecati mollitia nemo illo ipsa 
+            debitis nam dolorum voluptates, adipisci vel, 
+            dolore sequi sint cupiditate quam dicta velit.</p>
+    </section>
+    <section id="sec2">
+        <h1>Bye</h1>
+        <p>Lorem ipsum dolor sit amet 
+            consectetur, adipisicing elit. 
+            Consectetur molestiae nobis autem 
+            obcaecati mollitia nemo illo ipsa 
+            debitis nam dolorum voluptates, adipisci vel, 
+            dolore sequi sint cupiditate quam dicta velit.</p>
+    </section>
+    <section id="sec3">
+        <h1>Bye</h1>
+        <p>Lorem ipsum dolor sit amet 
+            consectetur, adipisicing elit. 
+            Consectetur molestiae nobis autem 
+            obcaecati mollitia nemo illo ipsa 
+            debitis nam dolorum voluptates, adipisci vel, 
+            dolore sequi sint cupiditate quam dicta velit.</p>
+    </section>
+    <section id="sec4">
+        <h1>Bye</h1>
+        <p>Lorem ipsum dolor sit amet 
+            consectetur, adipisicing elit. 
+            Consectetur molestiae nobis autem 
+            obcaecati mollitia nemo illo ipsa 
+            debitis nam dolorum voluptates, adipisci vel, 
+            dolore sequi sint cupiditate quam dicta velit.</p>
+    </section>
+    <script type="text/javascript">
+    
+        window.addEventListener("scroll", function(){
+            let NAV = document.querySelector("nav");
+            NAV.classList.toggle("sticky",window.scrollY > 0);
+            if (window.scrollY > 0 ){
+                NAV.style.position = "fixed";
+            }
+            else{
+                NAV.style.position = "relative";
+            }
+        });
+    </script>
+</body>
 </html>
-
