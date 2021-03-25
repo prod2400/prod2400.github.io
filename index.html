@@ -19,6 +19,7 @@
             <li><a href="#top">Home</a></li>
             <li><a href="#sec2">About</a></li>
             <li><a href="#sec3">Resume</a></li>
+            <li><a href="#skills-section">Skills</a></li>
             <li><a href="#sec4">Contact</a></li>
         </ul>
     </nav>
@@ -70,7 +71,7 @@
                 <p>Take a look at or downloard my resume</p>
                 <p><a href=".\pedro-rodrigues-final1.pdf">+ Take a look at PDF</a></p>
                 <p><a href=".\pedro-rodrigues-final1.pdf" download>+ Download PDF</a></p>
-            </div>
+            </div> 
             <div id="sec3-right">
                 <img id="resume" src="pedro-rodrigues-final1-1.jpg">
             </div>
@@ -78,35 +79,55 @@
         </div>
         </section>
     </section>
+    <section id="skills-section">
+        <div class="section-content">
+        <h1>Skills</h1>
+
+        <h3>HTML</h3>
+        <progress value="90" max="100">32%</progress>
+        <h3>CSS</h3>
+        <progress value="90" max="100">32%</progress>
+        <h3>JavaScript</h3>
+        <progress value="70" max="100">32%</progress>
+        <h3>Python</h3>
+        <progress value="80" max="100">32%</progress>
+
+
+        </div>
+    </section>
    
     <section id="sec4">
-        <div id="sec4-overlay">
+        
         <div class="section-content">
-            <h1>Get In Contact</h1>
+            
             <form action>
+                <h1>Get In Contact</h1>
                 <div class="contact_form">
+                    <div id="name-email-box">
                   <div id="name_box">
                     <label for="name">Name</label>
-                    <input id="name" name="name" type="text" placeholder="John">
+                    <input id="name" name="name" type="text" placeholder="">
                   </div>
                   <div id="email_box">
                     <label for="email">Email</label>
-                    <input id="email" name="email" type="email" placeholder="JohnDoe@example.com">
-                  <div>
-                  <label>Message</label>
+                    <input id="email" name="email" type="email" placeholder="">
+                  </div>
+                    </div>
+                  <label id="msg-label">Message</label>
                   <textarea>
                   </textarea>
                   <button type="submit">Submit</button>
                 </div>
               </form>
         </div>
-    </div>
     </section>
     <footer>
         <p>&copy;</p>
     </footer>
     <script type="text/javascript">
-    
+        const ta = document.querySelector("textarea");
+        ta.textContent = "";
+
         window.addEventListener("scroll", function(){
             let NAV = document.querySelector("nav");
             NAV.classList.toggle("sticky",window.scrollY > 0);
@@ -117,6 +138,8 @@
                 NAV.style.position = "relative";
             }
         });
+
+
     </script>
 </body>
 </html>
